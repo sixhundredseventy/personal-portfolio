@@ -7,11 +7,11 @@ import icon from 'astro-icon';
 
 import cloudflare from '@astrojs/cloudflare';
 
-import min from 'astro-min';
+import compressor from 'astro-compressor';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), icon(), min()],
+  integrations: [tailwind(), icon(), compressor()],
   output: 'server',
   adapter: cloudflare()
 });
