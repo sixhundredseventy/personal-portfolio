@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Socials from '../components/Socials.astro';
+import Projects from '../components/Projects.astro';
+import Technology from '../components/Technology.astro';
+---
+
+<Layout title="670 portfolio">
+	<main class="bg-black text-white text-center scroll-smooth align-middle">
+        <div class="snap-y snap-mandatory overflow-y-scroll h-screen ">
+            <Header/>
+            <Projects/>
+            <Technology/>
+            <Socials/>
+        </div>
+	</main>
+</Layout>
